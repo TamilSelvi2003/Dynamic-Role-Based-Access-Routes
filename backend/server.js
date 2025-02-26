@@ -17,7 +17,7 @@ app.use(express.json())
 app.use(cookieparser())
 app.use(cors({
     credentials: true,
-    origin: 'https://dynamic-role-based-access-routes-frontend.onrender.com'  
+    origin: 'https://localhost:5173'  
 }));
 
 app.use('/api/auth',AuthRoutes)
