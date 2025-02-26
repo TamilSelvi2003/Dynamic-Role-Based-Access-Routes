@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create({
-  baseURL:'https://dynamic-role-based-access-routes.onrender.com',
+  baseURL:'https://localhost:4000',
     headers:{
         'Content-Type': 'application/json'
     },
