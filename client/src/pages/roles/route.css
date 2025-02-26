@@ -1,0 +1,195 @@
+CreateRoute.css
+
+.route-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-btn {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    float: right;
+  }
+  
+  .back-btn:hover {
+    background-color: #444;
+  }
+  
+  .route-title {
+    text-align: center;
+    color: #333;
+  }
+  
+  .route-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+
+  }
+  
+  .route-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .route-submit {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .route-submit:hover {
+    background-color: #218838;
+  }
+  
+  .route-list-title {
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+  }
+  
+  .route-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .route-table th,
+  .route-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .route-table th {
+    background-color: #dedede;
+    color: black;
+  }
+  
+  .route-table td {
+    background-color: #fff;
+  }
+  
+  .edit-btn {
+color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .edit-btn:hover {
+ color: green;
+  }
+  
+  .delete-btn {
+color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-btn:hover {
+  color: #c82333;
+  }
+  
+
+  .route-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .back-btn {
+    padding: 8px 12px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .route-title {
+    margin-bottom: 15px;
+  }
+  
+  .route-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .route-input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .route-submit {
+    padding: 8px 12px;
+    background-color: #f2f2f2;
+    color: black;
+    border: 1px solid #dedede;
+margin-left: -730px;
+width: 140px;
+    cursor: pointer;
+  }
+  
+  .route-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .route-table th, .route-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .route-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .edit-btn, .delete-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  
+  .edit-btn {
+    color: green;
+  }
+  
+  .delete-btn {
+    color: #dc3545;
+  }
+  
