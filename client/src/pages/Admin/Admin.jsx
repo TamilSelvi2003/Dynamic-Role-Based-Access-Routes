@@ -17,7 +17,7 @@ const Admin = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await get("/api/admin/getuser");
+        const response = await get("https://dynamic-role-based-access-routes-frontend.onrender.com/admin/getuser");
         if (response.status === 200) {
           setUsers(response.data.users);
         }
@@ -29,7 +29,7 @@ const Admin = () => {
 
     const fetchRoles = async () => {
       try {
-        const response = await get("/api/roles");
+        const response = await get("https://dynamic-role-based-access-routes-frontend.onrender.com/roles");
         if (response.status === 200) {
           setRoles(response.data);
         }
@@ -62,13 +62,13 @@ const Admin = () => {
     try {
       let response;
       if (editingUserId) {
-        response = await put(`/api/admin/updateuser/${editingUserId}`, formData);
+        response = await put(`https://dynamic-role-based-access-routes-frontend.onrender.com/admin/updateuser/${editingUserId}`, formData);
         if (response.status === 200) {
           toast.success("User updated successfully!");
           setUsers(users.map(user => user._id === editingUserId ? response.data.user : user));
         }
       } else {
-        response = await post("/api/admin/createuser", formData, {
+        response = await post("https://dynamic-role-based-access-routes-frontend.onrender.com/admin/createuser", formData, {
           headers: { "Content-Type": "application/json" }, // Ensure JSON data format
         });
         if (response.status === 201) {
@@ -98,7 +98,7 @@ const Admin = () => {
   // Handle delete
   const handleDelete = async (userId) => {
     try {
-      const response = await deleteUser(`/api/admin/delet/${userId}`);
+      const response = await deleteUser(`https://dynamic-role-based-access-routes-frontend.onrender.com/admin/delet/${userId}`);
       if (response.status === 200) {
         setUsers(users.filter(user => user._id !== userId));
         toast.success("User deleted successfully!");
